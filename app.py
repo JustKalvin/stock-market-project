@@ -14,7 +14,7 @@ def get_base64(image_path):
     return base64.b64encode(img_file.read()).decode()
 
 # Ganti path ke gambar kamu
-image_base64 = get_base64("./stonk.jpg")
+image_base64 = get_base64("adds/stonk.jpg")
 
 # Masukin ke CSS
 page_bg_color = f"""
@@ -31,7 +31,7 @@ page_bg_color = f"""
 st.markdown(page_bg_color, unsafe_allow_html=True)
 
 
-sidebar_base64 = get_base64('./stonk_sidebar.png')
+sidebar_base64 = get_base64('adds/stonk_sidebar.png')
 
 sidebar_bg_image = f"""
 <style>
@@ -194,7 +194,7 @@ else :
     x_train, y_train = np.array(x_train), np.array(y_train)
 
     # Load model
-    model = load_model('./Final_Model.h5')
+    model = load_model('adds/Final_Model.h5')
 
     past_100_days = train_data.tail(100)
     final_df = pd.concat([past_100_days, test_data], ignore_index = True)
