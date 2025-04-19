@@ -239,7 +239,7 @@ else :
     n = prediction_days_num
     temp_pred = []
     from keras.models import load_model
-    model = load_model('./SMPmodel.h5') 
+    model = load_model('adds/Final_Model.h5') 
 
     for i in range(n) :
         y_pred = model.predict(train_data2[:, i : train_data2.shape[1], :])
