@@ -343,7 +343,7 @@ else :
         "predicted_prices": temp_pred2['Predicted Price'].tolist()
     }
 
-    webhook_url = "https://lioness-eternal-elf.ngrok-free.app/webhook/stockanalysis"
+    webhook_url = "https://foal-perfect-annually.ngrok-free.app/webhook/stockanalysis"
     st.subheader("Stock Market Analysis")
     try:
         response = requests.post(webhook_url, json=payload)
