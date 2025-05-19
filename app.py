@@ -343,7 +343,7 @@ else :
         "predicted_prices": temp_pred2['Predicted Price'].tolist()
     }
 
-    webhook_url = "https://primary-production-78161.up.railway.app/webhook/stockanalysis"
+    webhook_url = "https://primary-production-78161.up.railway.app/webhook-test/stockanalysis"
     st.subheader("Stock Market Analysis")
     try:
         response = requests.post(webhook_url, json=payload)
